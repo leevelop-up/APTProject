@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1050.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AdminCostController">
+	<children>
+		<TableView fx:id="costTableView" layoutX="29.0" layoutY="58.0" prefHeight="283.0" prefWidth="903.0">
+			<columns>
+				<TableColumn prefWidth="93.0" text="동 수" />
+            <TableColumn prefWidth="93.0" text="호 수" />
+				<TableColumn prefWidth="72.0" text="전기세" />
+				<TableColumn prefWidth="72.0" text="수도세" />
+				<TableColumn prefWidth="72.0" text="가스비" />
+				<TableColumn prefWidth="72.0" text="난방비" />
+				<TableColumn prefWidth="72.0" text="공동사용료" />
+				<TableColumn prefWidth="94.0" text="수납여부" />
+				<TableColumn prefWidth="101.0" text="총수납액" />
+				<TableColumn prefWidth="113.0" text="수납완료일" />
+			</columns>
+		</TableView>
+		<Button fx:id="costBtnSearch" layoutX="303.0" layoutY="11.0" mnemonicParsing="false" text="검색" />
+		<TextField fx:id="textSearch" layoutX="54.0" layoutY="11.0" promptText="동·호 수 입력" />
+		<HBox alignment="CENTER" layoutX="7.0" layoutY="529.0" prefHeight="77.0" prefWidth="1040.0" spacing="50.0">
+			<children>
+				<Button fx:id="costBtnadd" mnemonicParsing="false" text="추가" />
+				<Button fx:id="costBtnEdit" mnemonicParsing="false" text="수정" />
+            <Button fx:id="costBtnDel" mnemonicParsing="false" text="삭제" />
+            <Button fx:id="costBtnChart" mnemonicParsing="false" text="차트" />
+				<Button fx:id="costBtnClose" mnemonicParsing="false" text="닫기" />
+			</children>
+		</HBox>
+		<HBox alignment="CENTER" layoutX="215.0" layoutY="347.0" prefHeight="47.0" prefWidth="255.0" spacing="35.0">
+			<children>
+				<Label text="동 수 " />
+				<TextField fx:id="costTextDong" prefHeight="39.0" prefWidth="131.0" />
+			</children>
+		</HBox>
+		<HBox alignment="CENTER" layoutX="323.0" layoutY="447.0" prefHeight="47.0" prefWidth="277.0" spacing="50.0">
+			<children>
+				<Label text="가스비" />
+				<TextField fx:id="costTextGas" prefHeight="39.0" prefWidth="131.0" />
+			</children>
+		</HBox>
+		<HBox alignment="CENTER" layoutX="319.0" layoutY="395.0" prefHeight="47.0" prefWidth="277.0" spacing="50.0">
+			<children>
+				<Label text="난방비" />
+				<TextField fx:id="costTextHeat" prefHeight="39.0" prefWidth="131.0" />
+			</children>
+		</HBox>
+		<HBox alignment="CENTER" layoutX="619.0" layoutY="398.0" prefHeight="47.0" prefWidth="320.0" spacing="30.0">
+			<children>
+				<Label text="공동사용료" />
+				<TextField fx:id="costTextJoint" prefHeight="39.0" prefWidth="138.0" />
+			</children>
+		</HBox>
+		<HBox alignment="CENTER" layoutX="54.0" layoutY="446.0" prefHeight="47.0" prefWidth="277.0" spacing="20.0">
+			<children>
+				<Label text="수도세" />
+				<TextField fx:id="costTextWater" prefHeight="39.0" prefWidth="131.0" />
+			</children>
+		</HBox>
+		<HBox alignment="CENTER" layoutX="87.0" layoutY="496.0" prefHeight="47.0" prefWidth="277.0" spacing="50.0">
+			<children>
+				<Label text="총수납액" />
+				<TextField fx:id="costTextTotal" disable="true" prefHeight="39.0" prefWidth="131.0" />
+			</children>
+		</HBox>
+		<HBox alignment="CENTER" layoutX="372.0" layoutY="496.0" prefHeight="47.0" prefWidth="277.0" spacing="50.0">
+			<children>
+				<Label prefHeight="25.0" prefWidth="96.0" text="수납여부" />
+				<ComboBox fx:id="costCmbRecive" prefWidth="150.0" />
+			</children>
+		</HBox>
+		<HBox alignment="CENTER" layoutX="643.0" layoutY="496.0" prefHeight="47.0" prefWidth="320.0" spacing="50.0">
+			<children>
+				<Label text="수납일" />
+				<DatePicker fx:id="costDateRecive" prefHeight="39.0" prefWidth="177.0" />
+			</children>
+		</HBox>
+		<Separator layoutX="-4.0" layoutY="492.0" prefHeight="0.0" prefWidth="1050.0" />
+      <HBox alignment="CENTER" layoutX="461.0" layoutY="347.0" prefHeight="47.0" prefWidth="277.0" spacing="35.0">
+         <children>
+            <Label text="호 수 " />
+            <TextField fx:id="costTextHo" prefHeight="39.0" prefWidth="131.0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="54.0" layoutY="393.0" prefHeight="47.0" prefWidth="277.0" spacing="30.0">
+         <children>
+            <Label text="전기세" />
+            <TextField fx:id="costTextelec" prefHeight="39.0" prefWidth="131.0" />
+         </children>
+      </HBox>
+      <Button fx:id="inputcost" layoutX="400.0" layoutY="14.0" mnemonicParsing="false" text="불러오기" />
+	</children>
+</AnchorPane>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="396.0" prefWidth="540.0" style="-fx-background-color: #D5D5D5;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AdminListController">
+	<children>
+		<HBox alignment="CENTER" layoutY="178.0" prefHeight="116.0" prefWidth="600.0" spacing="50.0">
+			<children>
+				<Button fx:id="adBtnFamily" mnemonicParsing="false">
+               <graphic>
+                  <ImageView fitHeight="115.0" fitWidth="141.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../자바프로젝트/images/iconfinder_collaborative-combine-hand-together-team_3790070.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+				<Button fx:id="adBtnCost" mnemonicParsing="false">
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="116.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../자바프로젝트/images/iconfinder_266_Bank_deposit_cash_money_3990119.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+				<Button fx:id="adBtnStaff" mnemonicParsing="false">
+               <graphic>
+                  <ImageView fitHeight="102.0" fitWidth="141.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../자바프로젝트/images/iconfinder_Teamwork_3533401.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+			</children>
+		</HBox>
+		<Button fx:id="adBtnExit" layoutX="508.0" layoutY="14.0" mnemonicParsing="false">
+         <graphic>
+            <ImageView fitHeight="36.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../자바프로젝트/images/iconfinder_return-back-redo-arrow_2075802%20(1).png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+		<Label layoutX="187.0" layoutY="76.0" text="관리 목록">
+			<font>
+				<Font size="56.0" />
+			</font>
+		</Label>
+	</children>
+</AnchorPane>

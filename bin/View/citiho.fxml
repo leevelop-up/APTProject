@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="504.0" prefWidth="563.0">
+         <children>
+            <HBox alignment="CENTER" layoutX="8.0" prefHeight="63.0" prefWidth="500.0">
+               <children>
+                  <Label text="관리비 청구서">
+                     <font>
+                        <Font size="58.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Separator layoutY="259.0" prefHeight="4.0" prefWidth="508.0" />
+            <HBox layoutX="21.0" layoutY="263.0" prefHeight="39.0" prefWidth="479.0">
+               <children>
+                  <Label text="상기 " />
+                  <TextField id="textDong" prefHeight="39.0" prefWidth="92.0" />
+                  <Label text="동" />
+                  <TextField id="textHo" prefHeight="39.0" prefWidth="92.0" />
+                  <Label prefHeight="25.0" prefWidth="224.0" text="호 의 관리비를 정히 청구합니다." />
+               </children>
+            </HBox>
+            <Button id="btnOk" layoutX="218.0" layoutY="368.0" mnemonicParsing="false" text="확인" />
+            <Separator layoutX="7.0" layoutY="364.0" prefHeight="4.0" prefWidth="500.0" />
+            <TableView id="tableviewCost" layoutX="-2.0" layoutY="68.0" prefHeight="104.0" prefWidth="557.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="전기세" />
+                <TableColumn prefWidth="75.0" text="수도세" />
+                  <TableColumn prefWidth="75.0" text="가스비" />
+                  <TableColumn prefWidth="75.0" text="난방비" />
+                  <TableColumn prefWidth="75.0" text="공용관리비" />
+                  <TableColumn prefWidth="75.0" text="총 수납액" />
+                  <TableColumn prefWidth="75.0" text="기한 날짜" />
+              </columns>
+            </TableView>
+            <Button id="elecChart" layoutX="12.0" layoutY="197.0" mnemonicParsing="false" text="차트" />
+            <Button id="waterChart" layoutX="84.0" layoutY="197.0" mnemonicParsing="false" text="차트" />
+            <Button id="gasChart" layoutX="159.0" layoutY="198.0" mnemonicParsing="false" text="차트" />
+            <Button id="heatChart" layoutX="235.0" layoutY="197.0" mnemonicParsing="false" text="차트" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

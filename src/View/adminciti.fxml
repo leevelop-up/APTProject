@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox alignment="CENTER" layoutX="8.0" layoutY="475.0" prefHeight="52.0" prefWidth="600.0" spacing="40.0">
+         <children>
+            <Button id="caBtnAdd" mnemonicParsing="false" text="저장" />
+            <Button id="caBtnCancel" mnemonicParsing="false" text="취소" />
+            <Button id="caBtnClear" mnemonicParsing="false" text="초기화" />
+         </children>
+      </HBox>
+      <GridPane alignment="CENTER" layoutX="99.0" layoutY="53.0" prefHeight="405.0" prefWidth="400.0">
+         <children>
+            <Label alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" text="세대주소(동 수)" />
+            <TextField fx:id="caTextAddr1" prefHeight="39.0" prefWidth="119.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField id="caTextNumber" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Label text="전화번호" GridPane.rowIndex="7" />
+            <Label text="e-mail" GridPane.rowIndex="6" />
+            <TextField id="caTextEmail" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Label text="생년월일" GridPane.rowIndex="5" />
+            <TextField id="caTextday" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label text="성별" GridPane.rowIndex="4" />
+            <Label text="성명" GridPane.rowIndex="3" />
+            <Label text="패스워드" GridPane.rowIndex="2" />
+            <ComboBox id="caTextGender" fx:id="caTextGender" prefHeight="39.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField id="caTextName" fx:id="caTextName" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField id="caTextPass" fx:id="caTextPass" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="caTextAddr" prefHeight="39.0" prefWidth="119.0" GridPane.columnIndex="1" />
+            <Label alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" text="세대주소(호 수)" GridPane.rowIndex="1" />
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+   </children>
+</AnchorPane>
